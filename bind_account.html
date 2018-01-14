@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 删除默认的苹果工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 在web app应用下状态条（屏幕顶部条）的颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 禁止了把数字转化为拨号链接 -->
+    <meta name="format-detection" content="telephone=no">
+    <title>绑定账户</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/bind_account.css"/>
+    <script src="js/common_v2.js"></script>
+</head>
+<body>
+<div class="account_box">
+    <ul>
+        <li>请填写主申请人信息</li>
+        <li><span>姓名/公司名称</span><span class="name">IP657651</span></li>
+        <li>
+            <span>证件类型</span>
+            <span>
+                <select class="select select_usually">
+                    <option value="">大陆居民身份证</option>
+                    <option value="">护照</option>
+                    <option value="">营业执照</option>
+                </select>
+            </span>
+        </li>
+        <li><span>证件号码</span><span class="name IC">自动化扣</span></li>
+        <li>
+            <span class="code_box">验证码输入</span>
+            <span class="bet">
+                <input class="code" type="text">
+                <input class="code_btn" type="button" value="获取验证码"/>
+            </span>
+        </li>
+    </ul>
+    <input type="button" value="更改预检" class="btn"/>
+</div>
+</body>
+</html>
